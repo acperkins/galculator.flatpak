@@ -1,0 +1,20 @@
+app-id: org.github.acperkins.Galculator
+runtime: org.freedesktop.Platform
+runtime-version: '22.08'
+sdk: org.freedesktop.Sdk
+command: galculator
+modules:
+  - name: intltool
+    buildsystem: autotools
+    sources:
+      - type: archive
+        url: https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz
+        sha256: 67c74d94196b153b774ab9f89b2fa6c6ba79352407037c8c14d5aeb334e959cd
+  - name: galculator
+    buildsystem: autotools
+    sources:
+      - type: archive
+        url: https://github.com/acperkins/galculator/archive/refs/tags/v2.1.4.tar.gz
+        sha256: dcbdb48ddf8a3f68b9aa5902f880f174fd269de2b7410988148d05871012e142
+      - type: patch
+        path: galculator-2.1.4-build.patch
