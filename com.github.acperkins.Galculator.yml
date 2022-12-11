@@ -1,4 +1,4 @@
-app-id: org.github.acperkins.Galculator
+app-id: com.github.acperkins.Galculator
 runtime: org.freedesktop.Platform
 runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
